@@ -40,8 +40,8 @@ public class MyProducer1 {
         ProducerRecord<Integer, String> record = new ProducerRecord<Integer, String>(
                 "topic_1",  // 主题名称
                 0,       // 分区编号，现在只有一个分区，所以是0
-                0,           // 数字作为key
-                "hello lagou 0", // 字符串作为value
+                1,           // 数字作为key
+                "hello lagou 1", // 字符串作为value
                  headers           // 自定义的消息头
         );
         // 消息的同步确认
