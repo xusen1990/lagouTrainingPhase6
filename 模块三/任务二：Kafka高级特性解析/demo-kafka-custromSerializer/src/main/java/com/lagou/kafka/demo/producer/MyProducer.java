@@ -19,8 +19,8 @@ public class MyProducer {
         KafkaProducer<String, User> producer = new KafkaProducer<String, User>(configs);
 
         User user = new User();
-        user.setUserId(400);
-        user.setUsername("赵四");
+        user.setUserId(300);
+        user.setUsername("张三");
 
         ProducerRecord<String, User> record = new ProducerRecord<String, User>(
                 "tp_user_01",   // topic
